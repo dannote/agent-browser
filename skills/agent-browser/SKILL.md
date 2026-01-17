@@ -73,6 +73,8 @@ agent-browser get title           # Get page title
 agent-browser get url             # Get current URL
 agent-browser get count ".item"   # Count matching elements
 agent-browser get box @e1         # Get bounding box
+agent-browser get styles @e1      # Get computed styles of element
+agent-browser get styles "button" # Get styles for all matching elements
 ```
 
 ### Check state
@@ -87,6 +89,7 @@ agent-browser is checked @e1      # Check if checked
 agent-browser screenshot          # Screenshot to stdout
 agent-browser screenshot path.png # Save to file
 agent-browser screenshot --full   # Full page
+agent-browser screenshot @e1      # Screenshot specific element by ref
 agent-browser pdf output.pdf      # Save as PDF
 ```
 
